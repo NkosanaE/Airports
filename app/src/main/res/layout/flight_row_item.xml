@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bludroid="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/userInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/rounder_corners"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Depaturelayout"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/departTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text=""
+                    android:textColor="@android:color/holo_blue_dark"
+                    />
+
+                <ImageView
+                    android:id="@+id/imgStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/txtStatus"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:id="@+id/txtStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Status"
+
+                    />
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:padding="20dp"
+                android:id="@+id/divider"
+                android:orientation="horizontal"
+                android:layout_below="@+id/Depaturelayout"
+                android:background="@android:color/darker_gray"/>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/flightImage"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:layout_below="@+id/divider">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ic_plane"
+                    android:layout_centerInParent="true"/>
+
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:id="@+id/flightName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/flightImage"
+                android:text="Flight Name"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@+id/Depaturelayout"
+                />
+            <TextView
+                android:id="@+id/destination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/flightName"
+                android:layout_toRightOf="@+id/flightImage"
+                android:text="destination"
+                />
+            <TextView
+                android:id="@+id/flightNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/destination"
+                android:layout_toRightOf="@+id/flightImage"
+                android:text="Flght Number"
+
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

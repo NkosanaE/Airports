@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FlightDetailsActivity"
+    android:background="@android:color/darker_gray">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/airportDetailsView"
+        android:background="@mipmap/airport"
+       >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/airPortNameTextView"
+            android:text="OR TAMBO International"
+            android:textSize="100px"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="0dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/airPortLocationTextView"
+            android:text="Kempton Park"
+            android:textSize="70px"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/airPortNameTextView"
+            />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/flightsList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:divider="@android:color/holo_blue_dark"
+        android:dividerHeight="1px"
+        android:layout_below="@+id/airportDetailsView"
+        android:layout_margin="10dp"/>
+
+
+</android.widget.RelativeLayout>

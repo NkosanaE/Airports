@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DVT_Airpots</string>
+
+    <string name="apiBaseUrl">http://aviation-edge.com/v2/public/nearby?</string>
+    <string name="apiKey">key=021988-a0dbb9&amp;</string>
+    <string name="apiDistance">&amp;distance=100</string>
+</resources>
